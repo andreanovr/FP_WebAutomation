@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="40.339">
+    <testcase classname="Login" name="TC_084 - Login as a room tenant with valid credentials" time="11.052">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+And user choose Masuk.......................................................passed
+And user choose Pencari Kost................................................passed
+And user input email with "andreanovr@gmail.com"............................passed
+And user input password with "andreanovr@gmail.com".........................passed
+When user click on login button.............................................passed
+Then user is on homepage....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="TC_070 -  Login as a room owner with valid credentials" time="28.95">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+And user choose Masuk.......................................................passed
+And user choose Penyewa Kost................................................passed
+And user input email with "fachrulfatahillah3@gmail.com"....................passed
+And user input password with "example12345".................................passed
+When user click on login button.............................................passed
+Then user is on homepage....................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
