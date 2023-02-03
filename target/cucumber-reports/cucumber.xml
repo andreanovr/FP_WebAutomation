@@ -1,23 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="40.339">
-    <testcase classname="Login" name="TC_084 - Login as a room tenant with valid credentials" time="11.052">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="172.398">
+    <testcase classname="Logout" name="TC_123 - Room Owner - verify user can logout with click the Logout in pop-up &quot;do you want to exit ?&quot;" time="43.808">
         <system-out><![CDATA[Given user is on home page..................................................passed
 And user choose Masuk.......................................................passed
 And user choose Pencari Kost................................................passed
-And user input email with "andreanovr@gmail.com"............................passed
-And user input password with "andreanovr@gmail.com".........................passed
-When user click on login button.............................................passed
-Then user is on homepage....................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Login" name="TC_070 -  Login as a room owner with valid credentials" time="28.95">
-        <system-out><![CDATA[Given user is on home page..................................................passed
-And user choose Masuk.......................................................passed
-And user choose Penyewa Kost................................................passed
 And user input email with "fachrulfatahillah3@gmail.com"....................passed
 And user input password with "example12345".................................passed
-When user click on login button.............................................passed
-Then user is on homepage....................................................passed
+And user click on login button..............................................passed
+And user is on homepage sign in.............................................passed
+And user click dropdown button..............................................passed
+When user click on logout button............................................passed
+And user click logout on the pop-up.........................................passed
+Then user is on home page...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logout" name="TC_124 - Room Owner - verify user can logout with click Cancel in pop-up &quot;do you want to exit ?&quot;" time="39.593">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+And user choose Masuk.......................................................passed
+And user choose Pencari Kost................................................passed
+And user input email with "fachrulfatahillah3@gmail.com"....................passed
+And user input password with "example12345".................................passed
+And user click on login button..............................................passed
+And user is on homepage sign in.............................................passed
+And user click dropdown button..............................................passed
+When user click on logout button............................................passed
+And user click cancel on the pop-up.........................................passed
+Then user is on homepage sign in............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logout" name="TC_127 - Room Owner - verify user can logout with click the Logout in pop-up &quot;do you want to exit ?&quot;" time="29.079">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+And user choose Masuk.......................................................passed
+And user choose Pencari Kost................................................passed
+And user input email with "fachrulfatahillah3@gmail.com"....................passed
+And user input password with "example12345".................................passed
+And user click on login button..............................................passed
+And user is on homepage sign in.............................................passed
+And user click dropdown button..............................................passed
+When user click on logout button............................................passed
+And user click logout on the pop-up.........................................passed
+Then user is on home page...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logout" name="TC_128 - Room Owner - verify user can logout with click Cancel in pop-up &quot;do you want to exit ?&quot;" time="59.404">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+And user choose Masuk.......................................................passed
+And user choose Pencari Kost................................................passed
+And user input email with "fachrulfatahillah3@gmail.com"....................passed
+And user input password with "example12345".................................passed
+And user click on login button..............................................passed
+And user is on homepage sign in.............................................passed
+And user click dropdown button..............................................passed
+When user click on logout button............................................passed
+And user click cancel on the pop-up.........................................passed
+Then user is on homepage sign in............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
